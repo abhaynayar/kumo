@@ -15,13 +15,12 @@
 - https://news.ycombinator.com/item?id=43739456
 - https://news.ycombinator.com/item?id=43716058
 
-## Technologies:
+### Technologies:
 - Networking.
 - Kubernetes.
 - Golang.
 - Docker.
 - AWS.
 
-
-## Security:
+### Security:
 - Find security-vulnerabilities in cloud-technologies.
