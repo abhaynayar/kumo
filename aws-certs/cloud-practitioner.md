@@ -1,7 +1,7 @@
-# AWS Cloud-Practitioner
-## Learning-Resource(s):
-- AWS Skill-Builder Essentials.
+# AWS Cloud-Practitioner:
+Learning-Resource: AWS Skill-Builder: Exam Prep Plan: AWS Certified Cloud Practitioner (CLF-C02 - English)
 
+# AWS Cloud Practitioner Essentials:
 ## ***EC2***:
 - Intro:
     - ***Multi-tenancy***: Sharing underlying hardware between virtual machines.
@@ -47,6 +47,7 @@
 - AWS Lambda:
     - Serverless compute option. Managed environment.
     - Upload code to Lambda Function. Configure a trigger.
+    - 1 mil free then charged by num of request AND execution-time..
 - Other:
     - Amazon ECS. (Elastic Container Service).
     - Amazon EKS. (Elastic Kubernetes Service).
@@ -190,12 +191,12 @@
         - Amazon DynamoDB Accelerator..  Amazon DAX..
 
 ## Security:
-
 - Shared-Responsibility Model:
     -  AWS: of the cloud..  ie..  physical, network, hypervisor..
     -  Customer: in the cloud..  ie..  operating-system, application, data..
 - User-Permissions & Access:
     - AWS root account user.. owner of AWS account..  access & control anything..
+    - programmatic-access requires:  an access-key ID,  & a secret-access-key..
     - As soon as you create an account pls turn on MFA..
     - Still, you don't wanna use root-user for everything..
     - **AWS-IAM**:  for granular access instead..
@@ -229,8 +230,9 @@
     - slow-lorris-  solution- elastic-load-balancer..
     - **AWS-Shield** with **AWS-WAF**: ML, new-threats, ..
 - additional-services:
+    - aws-cert-manager: implement encryption in transit..
     - aws-kms: create crypto keys.. - encryption at rest/transit..
-    - amazon-inspector: automated security-assessments against your infrastructure..
+    - amazon-inspector: automated security-assessments against your infrastructure.. EC2, not S3..
         - network config reachability piece..
         - amazon-agent..
         - security assessment service..
@@ -239,6 +241,8 @@
         - takes in as input: cloud-trail, vpc flow logs, dns logs..
         - known ip-address, anomaly-detection, machine-learning..
     - advanced-shield, security-hub..
+    - Macie is an automated security assessment service that helps improve the security and compliance of applications deployed on AWS.
+    - Secrets Manager helps you protect secrets needed to access your applications, services, and IT resources. Secrets Manager does not perform S3 data classification and automatic discovery.
 
 ## Monitoring & Analytics:
 -  **Amazon-CloudWatch**:  (near-real-time):
@@ -262,6 +266,7 @@
     - types: - always-free.. 12 months-free.. trials..
     - services free-tier examples..:
         - lambda- 1 mil free invocations per month..
+        - after free-tier expires.. 
         - s3- free for 12 months for up to 5gb of storage..
         - sage-maker, dynamo-db, sns, cognito..
 - AWS-Pricing-Calculator:  https://calculator.aws/#/
@@ -278,6 +283,8 @@
     - tam: well-architected-framweowkr: op ex, sec, reliability, perf, cost, sustainability..
 
 ## Migration & Innovation:
+- AWS Application Migration Service:
+    - AWS MGN is an automated lift-and-shift solution. This solution can migrate physical servers and any databases or applications that run on them to EC2 instances in AWS.
 - AWS-CAF: (Cloud-Adoption-Framework):
     - 6-areas based on role-type: biz, ppl (hr), governance, platform, sec, ops..
     - AWS-CAF Action-Plan..
@@ -302,6 +309,7 @@
     - AWS Deep-Racer..
     - IoT:  ??
     - AWS-Ground-Station..  (Satellite)..
+    - Amazon Polly is a machine learning service that converts text to speech. This service provides the ability to read text out loud.
     - Amazon-Augmented-AI.. (A2I)..  Amazon Augmented AI (Amazon A2I) provides built-in human review workflows for common machine learning use cases, such as content moderation and text extraction from documents. With Amazon A2I, a person can also create their own workflows for machine learning models built on Amazon SageMaker or any other tools.
 
 

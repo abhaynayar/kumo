@@ -14,6 +14,8 @@
 - https://news.ycombinator.com/item?id=43789625
 - https://news.ycombinator.com/item?id=43739456
 - https://news.ycombinator.com/item?id=43716058
+- https://news.ycombinator.com/item?id=43889610
+- https://news.ycombinator.com/item?id=43893906
 
 ### Technologies:
 - Networking.
@@ -24,3 +26,7 @@
 
 ### Security:
 - Find security-vulnerabilities in cloud-technologies.
+
+
+### Read:
+- CrowdStrike: The Complete Guide to Kubernetes Security
