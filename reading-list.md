@@ -17,6 +17,7 @@
 - https://news.ycombinator.com/item?id=43889610
 - https://news.ycombinator.com/item?id=43893906
 - https://news.ycombinator.com/item?id=43899236
+- https://news.ycombinator.com/item?id=43928118
 
 ### Technologies:
 - Networking.
