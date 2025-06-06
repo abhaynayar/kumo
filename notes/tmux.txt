@@ -1,0 +1,20 @@
+- Start: `tmux`
+- Session:
+  - Detach: `Ctrl-b d`
+  - Reattach: `tmux attach`
+    - `tmux list-sessions`
+    - `tmux attach -t <session-name>`
+- Window:
+  - New window: `Ctrl-b c`
+  - Switch window:
+    - Next: `Ctrl-b n`
+    - Previous: `Ctrl-b p`
+    - Specific: `Ctrl-b <number>`
+- Pane:
+  - Split screen vertically: `Ctrl-b %`
+  - Split screen horizontally: `Ctrl-b "`
+  - Switch between panes: `Ctrl-b o`
+- Kill:
+  - Pane: `Ctrl-b x`
+  - Window: `Ctrl-b &`
+  - Session: `exit` from all windows or `tmux kill-session -t <name>`
