@@ -1,0 +1,1 @@
+- Split by whitespace by default, columns can be accessed by $X..

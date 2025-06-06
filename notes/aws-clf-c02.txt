@@ -1,5 +1,6 @@
 # AWS-Cloud-Practitioner:
-Bookmark: - AWS Skill-Builder: Exam Prep Plan: AWS Certified Cloud Practitioner (CLF-C02 - English) - AWS Certified Cloud Practitioner (CLF-C02) - **Domain-4-Review**:..
+- I was using: AWS Skill-Builder: Exam Prep Plan: AWS Certified Cloud Practitioner (CLF-C02 - English) - AWS Certified Cloud Practitioner (CLF-C02)
+- I stopped at  **Domain-4-Review**..  cause I got too bored.. and felt it was useless..  gonna focus more on real-world stuff now..
 
 ## Methods of Deploying & Operating:
 - Public, Private, Multi, & Hybrid-Cloud:

@@ -1,0 +1,2 @@
+- It is the first userspace process the kernel starts..
+- Every service, timer, socket, mount, etc. is a "unit" tracked by systemd..

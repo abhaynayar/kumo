@@ -1,0 +1,3 @@
+- `alpine:latest` refers to the latest version of the Alpine Linux Docker image available on Docker Hub.
+
+
