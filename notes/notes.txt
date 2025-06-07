@@ -1,0 +1,42 @@
+## notes:
+
+what is ansible?: configuring ec2s that have already been provisioned..
+what is awk?: splits by whitespace by default, columns can be accessed by $X..
+
+docker:
+- `alpine:latest` refers to the latest version of the Alpine Linux Docker image available on Docker Hub.
+
+git:
+- github: add ".patch" in front of githubs commit url for detailed info..
+
+systemd:
+- It is the first userspace process the kernel starts..
+- Every service, timer, socket, mount, etc. is a "unit" tracked by systemd..
+
+terraform:
+- provisions infrastructure..
+- terraform init
+- terraform apply
+
+ssh:
+- you can add stuff to ~/.ssh/config for quick commands like so:
+
+Host cloud-devbox
+  HostName ec2-xxx.eu-north-1.compute.amazonaws.com
+  User ubuntu
+  IdentityFile ~/.ssh/ang-aws.pem
+
+Host fast
+  HostName ec2-xxx.ap-south-1.compute.amazonaws.com
+  User ubuntu
+  IdentityFile ~/.ssh/ang-ap.pem
+
+IAM:
+- ec2 dashboard
+- go to instance
+- actions > security > modify iam role
+- create role with AmazonEC2FullAccess
+- check iam role from within your ec2: `curl http://169.254.169.254/latest/meta-data/iam/info` (IMDSv2 requires token)
+
+EC2:
+- AMI-IDs are different across regions..

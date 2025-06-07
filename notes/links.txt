@@ -1,8 +1,14 @@
-## Utilities:
+## links:
+
+utils:
 - https://github.com/netdata/netdata
 - https://www.cloudping.info/
 
-### Read:
+security:
+- https://www.tensorflow.org/responsible_ai/privacy/guide
+- https://kubernetes.io/docs/tasks/debug/debug-cluster/audit/
+
+read:  **TBD**: fix:
 - https://x.com/shydev69/status/1916693288381210815
 - https://news.ycombinator.com/item?id=44135638
 - https://news.ycombinator.com/item?id=44105592
@@ -20,4 +26,3 @@
 - https://news.ycombinator.com/item?id=43933683
 - https://news.ycombinator.com/item?id=43931944
 - https://news.ycombinator.com/item?id=43916577
-
