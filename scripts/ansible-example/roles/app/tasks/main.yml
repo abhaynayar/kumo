@@ -1,0 +1,29 @@
+---
+- name: Create web root directory
+  file:
+    path: /var/www/html
+    state: directory
+    owner: www-data
+    group: www-data
+    mode: '0755'
+
+- name: Upload website archive
+  copy:
+    src: files/site.tar.gz
+    dest: /tmp/site.tar.gz
+
+- name: Extract website to web root
+  unarchive:
+    src: /tmp/site.tar.gz
+    dest: /var/www/html/
+    remote_src: yes
+    extra_opts: [--strip-components=1]
+
+- name: Set correct permissions
+  file:
+    path: /var/www/html
+    state: directory
+    recurse: yes
+    owner: www-data
+    group: www-data
+
