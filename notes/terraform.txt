@@ -1,0 +1,4 @@
+what is terraform?:  provisioning infrastructure..
+
+terraform init
+terraform apply

@@ -1,0 +1,13 @@
+you can add stuff to ~/.ssh/config for quick commands like so:
+
+Host cloud-devbox
+  HostName ec2-xxx.eu-north-1.compute.amazonaws.com
+  User ubuntu
+  IdentityFile ~/.ssh/ang-aws.pem
+
+Host fast
+  HostName ec2-xxx.ap-south-1.compute.amazonaws.com
+  User ubuntu
+  IdentityFile ~/.ssh/ang-ap.pem
+
+
