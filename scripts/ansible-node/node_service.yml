@@ -1,7 +1,6 @@
 - name: Deploy Node.js App
   hosts: web
   become: yes
-
   roles:
     - app
 

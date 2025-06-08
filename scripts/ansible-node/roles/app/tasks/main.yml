@@ -14,19 +14,27 @@
   args:
     executable: /bin/bash
 
-- name: Clone Node.js app repo
+- name: Install PM2 globally
+  npm:
+    name: pm2
+    global: yes
+
+- name: Clone GitLab repo
   git:
-    repo: "{{ app_repo }}"
-    dest: "{{ app_dest }}"
+    repo: "https://gitlab.com/abhaynayar/node-hello.git"
+    dest: "/opt/node-hello"
     version: main
     force: yes
+    accept_hostkey: yes
 
 - name: Install npm dependencies
   npm:
-    path: "{{ app_dest }}"
+    path: "/opt/node-hello"
 
-- name: Start app
-  shell: "nohup node index.js > output.log 2>&1 &"
+- name: Restart app with PM2
+  shell: |
+    pm2 delete node-hello || true
+    pm2 start index.js --name node-hello
+    pm2 save
   args:
-    chdir: "{{ app_dest }}"
-
+    chdir: "/opt/node-hello"
