@@ -17,6 +17,8 @@ terraform:
 - provisions infrastructure..
 - terraform init
 - terraform apply
+- terraform state list
+- terraform plan
 
 ssh:
 - you can add stuff to ~/.ssh/config for quick commands like so:

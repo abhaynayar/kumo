@@ -1,0 +1,32 @@
+---
+- name: Install prerequisites
+  apt:
+    name:
+      - curl
+      - git
+    state: present
+    update_cache: yes
+
+- name: Install Node.js
+  shell: |
+    curl -fsSL https://deb.nodesource.com/setup_20.x | bash -
+    apt-get install -y nodejs
+  args:
+    executable: /bin/bash
+
+- name: Clone Node.js app repo
+  git:
+    repo: "{{ app_repo }}"
+    dest: "{{ app_dest }}"
+    version: main
+    force: yes
+
+- name: Install npm dependencies
+  npm:
+    path: "{{ app_dest }}"
+
+- name: Start app
+  shell: "nohup node index.js > output.log 2>&1 &"
+  args:
+    chdir: "{{ app_dest }}"
+
